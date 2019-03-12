@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Image } from "react-native";
 import Icon from "native-base";
-import MaterialIcons from "react-native-vector-icons/MaterialIcons"
+import MaterialIcons from "react-native-vector-icons/MaterialCommunityIcons"
 import FontAwesome from "react-native-vector-icons/FontAwesome"
 import { createAppContainer, createBottomTabNavigator } from "react-navigation";
 import { createMaterialBottomTabNavigator } from 'react-navigation-material-bottom-tabs';
@@ -13,7 +13,7 @@ import Tab5 from "../app/screens/Tab5"
 import { themes } from "./styles/themes";
 import { styles } from "./styles/style.tabbar";
 
-const Stack = createMaterialBottomTabNavigator(
+const Stack = createBottomTabNavigator(
   {
     Tab1: {
        screen: Tab1,
@@ -40,23 +40,33 @@ const Stack = createMaterialBottomTabNavigator(
           case "Tab1": iconName = "home"; break;
           case "Tab2": iconName = "calendar"; break;
           case "Tab3": iconName = "bookmark"; break;
-          case "Tab4": iconName = "book"; break;
-          case "Tab5": iconName = "cog"; break;
+          case "Tab4": iconName = "book-multiple-minus"; break;
+          case "Tab5": iconName = "settings"; break;
         }
-        return <FontAwesome type="FontAwesome" name={iconName} color={tintColor} size={20}/>;
+        return <MaterialIcons name={iconName} color={tintColor} size={22}/>;
       },
     }),
-    initialRouteName: "Tab1",
-    labeled: false,
-    barStyle: styles.barStyle,
-    activeTintColor: themes.colorApp,
-    inactiveTintColor: themes.colorGray,
-    backBehavior: "none",
+    tabBarOptions: {
+      activeTintColor: themes.colorApp,
+      inactiveTintColor: themes.colorGrayLight,
+      backBehavior: "none",
+      showLabel: false,
+
+    },
+    animationEnabled: true,
+
+    // initialRouteName: "Tab1",
+    // labeled: false,
+    // shifting: true,
+    // barStyle: styles.barStyle,
+    // activeTintColor: themes.colorApp,
+    // inactiveTintColor: themes.colorGray,
+    // backBehavior: "none",
 
   }
 );
 
-  const Main = createAppContainer(Stack);
+const Main = createAppContainer(Stack);
 
 export default class App extends Component {
     render() {
