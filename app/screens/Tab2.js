@@ -1,56 +1,42 @@
 import React, { Component } from "react";
 import { View, Text, FlatList } from "react-native";
-import { createMaterialTopTabNavigator } from "react-navigation";
+
+import ScrollableTabView from "react-native-scrollable-tab-view";
+import TabBar from "react-native-underline-tabbar";
+
 import HeaderNav from "../components/HeaderNav";
 
 import Tab1 from "../screens/tab2/Tab1";
 import { themes } from "../styles/themes";
 
-const Stack = createMaterialTopTabNavigator(
-  {
-    Tab1: {
-      screen: Tab1
-    },
-    Tab2: {
-      screen: Tab1
-    },
-    Tab3: {
-      screen: Tab1
-    },
-    Tab4: {
-      screen: Tab1
-    },
-    Tab5: {
-      screen: Tab1
-    },
-    Tab6: {
-      screen: Tab1
-    },
-    Tab7: {
-      screen: Tab1
-    },
-    Tab8: {
-      screen: Tab1
-    }
-  },
-  {
-    tabBarOptions: {
-      activeTintColor: themes.colorApp,
-      inactiveTintColor: themes.colorGrayLight,
-      backBehavior: "none",
-      showLabel: true,
-      scrollEnabled: true,
-    },
-    animationEnabled: true,
-  }
-);
+const Page = ({ label }) => <Tab1 />;
 
 export default class Tab2 extends Component {
   render() {
     return (
-      <View>
+      <View style={{ flex: 1, backgroundColor: themes.colorGrayLighter }}>
         <HeaderNav title="Theo lịch" />
-        <Stack style={{flex: 1, marginBottom: 54}}></Stack>
+        <ScrollableTabView
+          style={{ flex: 1, marginTop: -10 }}
+          tabBarTextStyle={{
+            textAlign: "center",
+            fontSize: 14,
+            fontWeight: "600"
+          }}
+          tabBarTextStyle={{ textAlign: "center", fontSize: 14, margin: 4 }}
+          tabBarActiveTextColor="black"
+          tabBarInactiveTextColor="gray"
+          tabBarBackgroundColor={themes.colorGrayLighter}
+          renderTabBar={() => <TabBar underlineColor={themes.colorApp} />}
+        >
+          <Page tabLabel={{ label: "Thứ hai" }} />
+          <Page tabLabel={{ label: "Thứ ba" }} />
+          <Page tabLabel={{ label: "Thứ tư" }} />
+          <Page tabLabel={{ label: "Thứ năm" }} />
+          <Page tabLabel={{ label: "Thứ sáu" }} />
+          <Page tabLabel={{ label: "Thứ bảy" }} />
+          <Page tabLabel={{ label: "Chủ nhật" }} />
+        </ScrollableTabView>
       </View>
     );
   }

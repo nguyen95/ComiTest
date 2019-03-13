@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import { View, Text, FlatList } from "react-native";
 import { createMaterialTopTabNavigator } from "react-navigation";
 import ItemType3 from "../../components/item_type_3";
-export default class Tab1 extends Component {
+export default class Tab11 extends Component {
   render() {
     return (
-      <View>
+      <View >
         <FlatList
           data={[1, 2, 3, 4, 5]}
           showsVerticalScrollIndicator={false}

@@ -15,4 +15,3 @@ class HeaderList extends Component {
 }
 
 export default withNavigation(HeaderList);
-j

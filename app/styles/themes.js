@@ -6,6 +6,8 @@ export var themes = {
     colorBG: "#FFFF",
     colorGray: "#696A69",
     colorGrayLight: "#A5A7A5",
+    colorGrayLighter: "#ECEBEA",
+    colorGrayLighter2: "#F5F5F5",
     colorYellow: "#FDE202",
     colorBlueLight: "#03A3B6",
     heightBtn: 35,

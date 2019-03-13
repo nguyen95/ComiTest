@@ -13,7 +13,7 @@ class ItemType2 extends Component {
             <View>
               <Image
                 style={styles.itemImage}
-                source={require("../resources/cao.jpg")}
+                source={require("../resources/cao2.jpg")}
                 resizeMode="contain"
               />
             </View>

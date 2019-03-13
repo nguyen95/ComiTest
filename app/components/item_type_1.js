@@ -10,15 +10,17 @@ class ItemType1 extends Component {
       <View>
         <TouchableOpacity style={styles.container}>
           <View style={styles.table}>
-            <View style={{flex: 1}}>
-              <Image
-                style={styles.itemImage}
-                source={require("../resources/cao.jpg")}
-                resizeMode="contain"
-              />
-            </View>
-            <Text numberOfLines={2} ellipsizeMode="tail" style={styles.tv_name}>Aaaafffffffffffffffffffffffffaaaa</Text>
-            <Text numberOfLines={1} ellipsizeMode="tail" style={styles.tv_sub}>Bbbbbbbbbbbbddddddddddd</Text>
+            <Image
+              style={styles.itemImage}
+              source={require("../resources/cao.jpg")}
+              resizeMode="contain"
+            />
+            <Text numberOfLines={2} ellipsizeMode="tail" style={styles.tv_name}>
+              Ba Con Mèo
+            </Text>
+            <Text numberOfLines={1} ellipsizeMode="tail" style={styles.tv_sub}>
+              Ba bốn năm
+            </Text>
           </View>
         </TouchableOpacity>
       </View>

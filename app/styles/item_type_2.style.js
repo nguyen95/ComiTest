@@ -29,7 +29,6 @@ export const styles = StyleSheet.create({
     flex: 1,
     flexDirection: "row",
     backgroundColor: "white",
-    borderBottomWidth: 0.5,
     borderTopWidth: 0.5,
     borderColor: themes.colorGrayLight
   },

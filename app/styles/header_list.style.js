@@ -5,18 +5,19 @@ export var styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: "row",
-    height: 50,
+    height: 30,
     alignItems: "center",
+    justifyContent: 'space-between',
     marginLeft: 16,
     marginRight: 16
   },
   title: {
-    fontSize: 14,
+    fontSize: 16,
     color: "black",
-    fontWeight: "500"
+    fontWeight: "400"
   },
   view_more: {
     fontSize: 12,
-    color: themes.colorBlueLight
+    color: themes.colorApp
   }
 });

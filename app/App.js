@@ -1,17 +1,15 @@
 import React, { Component } from "react";
-import { Image } from "react-native";
+import { Image, StatusBar } from "react-native";
 import Icon from "native-base";
 import MaterialIcons from "react-native-vector-icons/MaterialCommunityIcons"
 import FontAwesome from "react-native-vector-icons/FontAwesome"
 import { createAppContainer, createBottomTabNavigator } from "react-navigation";
-import { createMaterialBottomTabNavigator } from 'react-navigation-material-bottom-tabs';
 import Tab1 from "../app/screens/Tab1"
 import Tab2 from "../app/screens/Tab2"
 import Tab3 from "../app/screens/Tab3"
 import Tab4 from "../app/screens/Tab4"
 import Tab5 from "../app/screens/Tab5"
 import { themes } from "./styles/themes";
-import { styles } from "./styles/style.tabbar";
 
 const Stack = createBottomTabNavigator(
   {
@@ -54,6 +52,7 @@ const Stack = createBottomTabNavigator(
 
     },
     animationEnabled: true,
+    lazy: true,
 
     // initialRouteName: "Tab1",
     // labeled: false,
@@ -72,7 +71,9 @@ export default class App extends Component {
     render() {
       console.disableYellowBox = true;
         return(
-            <Main></Main>
+            <Main>
+              <StatusBar backgroundColor={themes.colorApp}></StatusBar>
+            </Main>
         );
     }
 }
