@@ -7,6 +7,7 @@ export var themes = {
     colorGray: "#696A69",
     colorGrayLight: "#A5A7A5",
     colorYellow: "#FDE202",
+    colorBlueLight: "#03A3B6",
     heightBtn: 35,
     heightBtnSmall: 30,
     sizeText: 16,
