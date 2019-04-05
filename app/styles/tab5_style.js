@@ -27,5 +27,9 @@ export const styles = StyleSheet.create({
     justifyContent: 'flex-end',
     alignItems: 'center', 
     padding: 24
+  },
+  btn_test: {
+    width: 100,
+    height: 40,
   }
 });

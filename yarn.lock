@@ -5092,6 +5092,13 @@ react-native-easy-grid@0.2.1:
   dependencies:
     lodash "4.17.11"
 
+react-native-facebook-account-kit@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/react-native-facebook-account-kit/-/react-native-facebook-account-kit-1.1.0.tgz#39b0b09cb84dd2ceb2879ee498b5b6160a81a601"
+  integrity sha512-1FwFcJ5p3OM80ExIpHg7CUb1+RA5E/gaPmhZl2hB6gfqi4EezRpNuXCZiJ6IvZTw/I8xhXzUkmf7kJMQv30YqA==
+  dependencies:
+    prop-types "^15.5.10"
+
 react-native-gesture-handler@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-1.1.0.tgz#2a7d545ad2e0ca23adce22b2af441ad360ecccee"

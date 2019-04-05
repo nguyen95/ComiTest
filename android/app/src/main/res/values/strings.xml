@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ComiTest</string>
+    <string name="fb_app_id">302213670368476</string>
+    <string name="ak_client_token">26a054a55356b0db4577e03ef43d7dd3</string>
 </resources>

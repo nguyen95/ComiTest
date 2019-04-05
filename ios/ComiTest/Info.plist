@@ -71,5 +71,19 @@
 		<string>SimpleLineIcons.ttf</string>
 		<string>Zocial.ttf</string>
 	</array>
+
+	<key>FacebookAppID</key>
+      <string>302213670368476</string>
+      <key>AccountKitClientToken</key>
+      <string>26a054a55356b0db4577e03ef43d7dd3</string>
+      <key>CFBundleURLTypes</key>
+      <array>
+        <dict>
+          <key>CFBundleURLSchemes</key>
+          <array>
+            <string>ak302213670368476</string>
+          </array>
+        </dict>
+      </array>
 </dict>
 </plist>
